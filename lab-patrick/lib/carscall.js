@@ -12,15 +12,15 @@ exports.ExoticCars = function(make, model) {
   this.highHorsepower = true;
 };
 
-// exports.ExoticCarsList = function(make, model) {
-//   exports.Cars.apply(this, [make, model]);
-//   this.highHorsepower = true;
-// };
+
+
+let BugattiCar = ['Bugatti', 'Veron'];
+
+exports.ExoticCarsList = function(make, model) {
+  exports.Cars.apply(this, BugattiCar);
+  this.highHorsepower = true;
+};
 
 let fiesta = new exports.Cars('Ford', 'Fiesta');
 let fxx = new exports.ExoticCars('Ferarri', 'FXX');
-// let veron = new exports.ExoticCarsList('Bugatti', 'Veron');
-
-console.log(fiesta);
-console.log(fxx);
-// console.log(veron);
+let veron = new exports.ExoticCarsList('Bugatti', 'Veron');
